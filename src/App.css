@@ -1,0 +1,196 @@
+/*Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/*global variable*/
+:root {
+  --text-font-wt: 100;
+  --text-question-font-wt: 400;
+  --title-text-font-wt: 700;
+}
+
+/* Style for global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: skyblue;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* Style for Home.js */
+.custom-loader {
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #766DF4;
+  border: 2px solid;
+  position: relative;
+}
+
+.custom-loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: #766DF4;
+  animation: p6 2s infinite;
+}
+
+@keyframes p6 {
+  100% {
+    inset: 0
+  }
+}
+
+.quizContainer {
+  border: solid 5px whitesmoke;
+  height: 38rem;
+  width: 40rem;
+  border-radius: 2rem;
+}
+
+.header {
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3rem;
+  font-weight: var(--title-text-font-wt);
+  margin-bottom: 30px;
+}
+
+.formOption {
+  font-size: 1.5rem;
+}
+
+select {
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.Button {
+  background: #77afd4;
+  background-image: -webkit-linear-gradient(top, #77afd4, #437a9c);
+  background-image: -moz-linear-gradient(top, #77afd4, #437a9c);
+  background-image: -ms-linear-gradient(top, #77afd4, #437a9c);
+  background-image: -o-linear-gradient(top, #77afd4, #437a9c);
+  background-image: linear-gradient(to bottom, #77afd4, #437a9c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #17191a 3px;
+  text-decoration: none;
+}
+
+.Button:hover {
+  background: #4e8eb5;
+  background-image: -webkit-linear-gradient(top, #4e8eb5, #226b9c);
+  background-image: -moz-linear-gradient(top, #4e8eb5, #226b9c);
+  background-image: -ms-linear-gradient(top, #4e8eb5, #226b9c);
+  background-image: -o-linear-gradient(top, #4e8eb5, #226b9c);
+  background-image: linear-gradient(to bottom, #4e8eb5, #226b9c);
+  text-decoration: none;
+}
+
+
+
+.startGame {
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+
+
+/*style for Question page*/
+
+.questionContainer {
+  border: solid 5px whitesmoke;
+  height: 38rem;
+  width: 40rem;
+  border-radius: 2rem;
+}
+
+.subHeader {
+  font-size: 3rem;
+  font-weight: var(--title-text-font-wt);
+  color: whitesmoke;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.question {
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+  font-weight: var(--text-question-font-wt);
+}
+
+.answerButton {
+  padding: 5px;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: var(--text-font-wt);
+  border: solid 1px black;
+  border-radius: 2rem;
+  margin-bottom: 10px;
+}
+
+.answerButton:hover {
+  background-color: rgb(135, 223, 235);
+  border: solid 1px rgb(255, 255, 255);
+  color: white;
+}
+
+
+.scoreContainer {
+  font-weight: var(--title-text-font-wt);
+  color: chocolate;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.finalScore {
+  border: solid 5px whitesmoke;
+  height: 38rem;
+  width: 40rem;
+  border-radius: 2rem;
+}
+
+.points {
+  font-size: 5rem;
+  font-weight: var(--title-text-font-wt);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.b2g {
+  font-size: 2.5rem;
+  font-weight: var(--text-font-wt);
+}
