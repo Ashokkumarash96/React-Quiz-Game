@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import { handleNumberChange } from "../redux/Actions";
 
 const QuestionCount = () => {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch; // Access the dispatch function from the Redux store
 
   const handleChange = (e) => {
-    dispatch(handleNumberChange(e.target.value));
+    dispatch(handleNumberChange(e.target.value)); // Access the dispatch function from the Redux store
   };
 
   return (
@@ -14,6 +14,7 @@ const QuestionCount = () => {
       <form>
         <label>Number of Questions</label>
         <textarea onChange={handleChange}></textarea>
+        {/* Textarea to input the number of questions */}
       </form>
     </div>
   );
